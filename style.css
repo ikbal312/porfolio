@@ -1,0 +1,224 @@
+img {
+  width: 100%;
+}
+body {
+}
+body header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  flex-basis: 5%;
+  height: 85vh;
+}
+body main {
+  flex-basis: 80%;
+}
+body footer {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 85vh;
+  flex-basis: 10%;
+}
+hr {
+  border: 1px dotted var(--border-color);
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  gap: 6%;
+  background: var(--header-bg-color);
+  color: var(--header-font-color);
+  padding: 1rem;
+}
+.header > .section {
+  font-weight: 400;
+}
+.header > .section > i {
+  font-size: 1.5rem;
+}
+
+.lside {
+  display: flex;
+  flex-direction: column;
+  background: var(--header-bg-color);
+  padding: 1rem;
+}
+.lside .banner {
+  display: flex;
+  flex-direction: column;
+}
+.lside .banner .image {
+  align-self: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+.lside .designation {
+  font-size: var(--font-size-designation);
+  font-weight: 500;
+  align-self: center;
+}
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+.info > div {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.language {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.language h4 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.p-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p-bar {
+  justify-self: flex-start;
+  position: relative;
+  box-sizing: content-box;
+  height: 10px;
+  border-radius: 25px;
+  padding: 2px;
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  width: calc(100% - 30%);
+}
+.p-bar > span {
+  display: block;
+  position: relative;
+  padding: 2px;
+  height: 100%;
+  background: var(--progress-bar-bg-color);
+  width: var(--progress-bar-eng);
+}
+
+.p-bar-container .value {
+  font-size: 0.9rem;
+}
+.skills h4 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.extra-skills h4 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.extra-skills ul li::marker {
+  color: green;
+  font-size: larger;
+}
+.extra-skills ul {
+  font-size: small;
+  padding: 0;
+  padding-left: 2rem;
+}
+.cv {
+  padding: 1rem;
+  align-self: center;
+}
+.cv button {
+  display: inline-block;
+  font-size: smaller;
+  padding: 0.4rem;
+  text-align: center;
+  text-decoration: none;
+  border-style: none;
+  border-radius: 8px;
+  background-color: var(--download-button-bgc);
+}
+.cv button:hover {
+  background-color: var(--download-button-bgc-hover);
+}
+main .banner {
+  position: relative;
+}
+main .banner img {
+  transform: scaleY(-1);
+}
+main .banner h4 {
+  position: absolute;
+  top: 6%;
+  left: 6%;
+  color: white;
+}
+main .banner p {
+  position: absolute;
+  top: 15%;
+  left: 6%;
+  color: white;
+}
+main .banner button {
+  position: absolute;
+  top: 25%;
+  left: 8%;
+  border-style: none;
+  border-radius: 5px;
+  padding: 0.4rem;
+}
+main .banner button:hover {
+  background-color: var(--download-button-bgc-hover);
+}
+main .banner h4 span {
+  color: greenyellow;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  body {
+    font-size: 0.7rem;
+  }
+
+  .lside .designation {
+    font-size: 0.7rem;
+  }
+  .p-bar-container .value {
+    font-size: 0.7rem;
+  }
+  body footer {
+    height: 80vh;
+  }
+  body header {
+    height: 80vh;
+  }
+  main .banner p {
+    top: 14%;
+  }
+  main .banner button {
+    top: 25%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  body {
+    flex-direction: column !important;
+  }
+  .header {
+    flex-direction: row;
+  }
+  main .banner p {
+    top: 22%;
+  }
+  main .banner button {
+    top: 50%;
+  }
+}
+
